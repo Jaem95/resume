@@ -799,7 +799,7 @@
                         <div class="email">
                            <i class="bi bi-envelope"></i>
                            <h4>Email:</h4>
-                           <p>jose.escobar.macias@hotmail.com</p>
+                           <p><a href="mailto:jose.escobar.macias@hotmail.com">jose.escobar.macias@hotmail.com</a></p>
                         </div>
                         <div class="phone">
                            <i class="bi bi-phone"></i>
@@ -809,26 +809,26 @@
                      </div>
                   </div>
                   <div class="col-lg-8 mt-5 mt-lg-0">
-                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                     <form action="https://formsubmit.co/jose.escobar.macias@hotmail.com" method="post" class="php-email-form">
+                        <input type="hidden" name="_subject" value="New contact from JAEM Resume">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_url" value="https://jaem95.github.io/resume/">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
                         <div class="row">
                            <div class="col-md-6 form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <input type="text" name="name" class="form-control" id="name" autocomplete="name" aria-label="Your Name" placeholder="Your Name" required>
                            </div>
                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="email" class="form-control" name="email" id="email" autocomplete="email" aria-label="Your Email" placeholder="Your Email" required>
                            </div>
                         </div>
                         <div class="form-group mt-3">
-                           <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                           <input type="text" class="form-control" name="subject" id="subject" aria-label="Subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group mt-3">
-                           <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                           <textarea class="form-control" name="message" rows="5" aria-label="Message" placeholder="Message" required></textarea>
                         </div>
-                        <div class="my-3">
-                           <div class="loading">Loading</div>
-                           <div class="error-message"></div>
-                           <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
+                        <p class="my-3 small text-muted">Your message will be processed by FormSubmit. Complete the verification on the next page to send it.</p>
                         <div class="text-center"><button type="submit">Send Message</button></div>
                      </form>
                   </div>
@@ -871,7 +871,7 @@
       <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
       <script src="assets/vendor/typed.js/typed.umd.js"></script>
       <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <!-- Contact uses native form submission to FormSubmit. -->
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
    </body>
